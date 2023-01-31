@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+p {
+    color: black;
+    background-color: rgb(231, 177, 177);
+}
+
+img{
+    margin: auto;
+    border-radius: 100%;
+}

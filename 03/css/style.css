@@ -1,0 +1,929 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Cabeçalho*/
+
+header{
+    background-color: black;
+    justify-content: center;
+}
+
+.cabecalho{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.logo_texto{
+    color: rgb(200, 0, 0);
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Menu*/
+
+.menu li{
+    display: inline-flex;
+}
+
+.menu li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu li a:hover{
+    color: red;
+}
+
+/*Rodapé*/
+
+.contato img{
+    padding: 10px 5px 10px 0px;
+}
+
+footer{
+    background-color: black;
+}
+
+.rodape{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+
+.descPeca{
+    text-align: center;
+    padding: 20px 0px 60px 0px;
+}
+
+.descPeca h3{
+    font-weight: 400;
+    font-size: 20;
+    line-height: 27px;
+}
+
+/*Conteudo*/
+
+.corpo{
+    background-color: #1B1B1C;
+}
+
+.conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #0F0F0F;
+    color: white;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.conteudo p{
+    margin: 10px;    
+}
+
+.boxAnime{
+    padding: 15px;
+}
+
+.boxAnime img{
+    border-radius: 10px;
+    width: 67%;
+}
+
+/*Noticias*/
+
+.contNoticia{
+    margin: auto;
+    background-color: #0F0F0F;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Vendas*/
+#cVenda{
+    background-color: white;
+}
+
+.contVenda{
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+}
+
+.vendTipo{
+    text-align: center;
+}
+
+.vendTipo h2{
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 38px;
+    padding-bottom: 10px;
+}
+
+.vendTipo p{
+    font-weight: 400;
+    margin: auto;
+    letter-spacing: 1px;
+}
+
+.pecas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.descPeca p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.descPeca button{
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    justify-content: center;
+    width: 120px;
+    height: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.descPeca button p{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.descPeca button:hover{
+    color: red;
+}
+
+.contVenda hr{
+    height: 4px;
+    border: none;
+    background-color: black;
+    border-radius: 4px;
+}
+/*Temos de Uso*/
+
+.corpoTerm{
+	    margin: auto;
+        font-family: Arial, Helvetica, sans-serif;        
+	    letter-spacing: 1px;	  
+    }
+
+    .corpo .corpoTerm h3{
+        font-weight: 700;
+        padding-bottom: 40px;
+    }
+
+    .corpo .corpoTerm p{
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        padding-bottom: 20px;
+    }
+
+    .corpo .corpoTerm .termosServ{
+        padding-left: 35px;
+    }
+
+.subI{
+    padding-bottom: 15px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/*Criar conta*/
+
+fieldset p{
+    width: 370px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.inputData{
+    position: relative;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 13px;
+    width: 100%;
+    letter-spacing: 2px;
+    padding-left: 3px;
+}
+
+fieldset{
+    border: none;
+    width: 370px;
+}
+
+.corpoLogin{
+    background-color: #0F0F0F;
+}
+
+.login{
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0F0F0F;
+}
+
+.box{
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+legend{
+    color: white;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 370px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.inputUser:focus ~ .labelIput, .inputUser:valid ~ .labelIput{
+    top: -20px;
+    font-size: 10px;
+    color: #cac8c8;
+}
+
+.labelIput{
+    position: absolute;
+    top: -2px;
+    left: 3px;
+    pointer-events: none;
+    transition: .5px;
+    color: white;
+    font-size: 14px;
+}
+
+#submit{
+    position: relative;
+    width: 175px;
+    height: 40px;
+    color: white;
+    background-color: red;
+    font-size: 15px;
+    border: none;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: rgb(252, 88, 88);
+}
+
+@media (max-width: 768px)
+{
+    .cabecalho{
+        padding: 15px;
+    }
+
+    .logo_texto{
+        font-size: 15px;
+    }
+
+    .logo_imagem{
+        width: 60px;
+    }
+
+    .logo_imagem img{
+        width: 100%;
+    }
+    
+    .menu{
+        text-align: center;
+        background-color: #2C2C2C;
+    }
+    
+    .menu li a{
+        font-size: 13px;
+        padding: 15px 10px;
+    }
+    
+    .rodape{
+        font-size: 11px;
+        padding: 8px 20px 25px 15px;
+        line-height: 15px;
+        width: 100%;
+    }
+
+    .contato img{
+        width: 35px;
+    }
+    
+    .conteudo{
+        width: 100%;
+        padding-top: 30px;
+        font-size: 13px;    
+    }
+
+    .conteudo p{
+        margin: 5px;
+    }
+    
+    .boxAnime{
+        padding: 10px;
+        width: 40%;
+    }
+
+    .boxAnime img{
+        width: 90%;
+    }
+
+    /*Noticias*/
+    
+    .contNoticia{
+        width: 100%;
+        padding: 30px;
+    }
+
+    .corpo .contNoticia .destaqueCaixa{
+        background-image: linear-gradient(black 40%, rgb(79, 16, 16));
+        width: 100%;
+        margin: 30px 0px 30px 0px;
+    }
+
+    .corpo .contNoticia .destaqueCaixa .destImagem{
+        display: flex;
+    }
+
+    .corpo .contNoticia .destaqueCaixa .destImagem img{
+        width: 45%;
+        margin: auto;
+    }
+
+    .corpo .contNoticia .destaqueCaixa .destTexto{
+        padding: 10px;
+        font-size: 13px;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    .corpo .contNoticia .destaqueCaixa .destTexto p{
+        padding: 5px 10px 15px 10px;
+        text-align: justify;
+    }
+
+    .corpo .contNoticia .destaqueCaixa .destTexto h2{
+        text-align: left;
+        padding-left: 10px;
+    }
+    
+    .corpo .contNoticia .destaqueCaixa .destTexto a button{
+        background-color: red;
+        font-weight: bold;
+        width: 90%;
+        color: white;
+        padding: 10px;
+        border: none;
+        margin: auto;
+    }
+
+    .corpo .contNoticia .destaqueCaixa .destTexto a button:hover{
+        background-color: rgb(252, 88, 88);
+    }
+    
+    .corpo .contNoticia .noticia .textNot p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: justify;
+        line-height: 20px;
+        font-size: 13px;
+    }
+
+    .corpo .contNoticia .noticia .textNot h2{
+        text-align: left;
+    }
+
+    .corpo .contNoticia .noticia{
+        text-align: center;
+    }
+
+    .corpo .contNoticia .noticia iframe{
+        width: 90%;
+        height: 210px;
+    }
+
+    .corpo .contNoticia .noticia img{
+        width: 95%;
+    }
+
+    /*vendas*/
+
+    .vendTipo{
+        padding: 50px 0px 50px 0px;
+    }
+
+    .vendTipo h2{
+        width: 85%;
+        margin: auto;
+        font-size: 32px;
+    }
+
+    .vendTipo p{
+        font-size: 17px;
+        line-height: 25px;
+        width: 85%;
+    }
+
+   .descPeca{
+        width: 50%;
+    }
+
+    .descPeca img{
+        width: 100%;
+    }
+
+    .descPeca h3{
+        font-size: 17;
+        line-height: 23px;
+    }
+
+    .descPeca button{
+        width: 115px;
+    }
+
+    .descPeca button p{
+        line-height: 19px;
+    }
+
+    .contVenda hr{
+        width: 90%;
+        margin: auto;
+    }
+
+    /* Termos de Uso*/
+
+    .corpoTerm{
+        width: 90%;
+        padding: 40px 0px 40px 0px;
+    }
+
+    .corpoTerm h3{
+        font-size: 32px;
+    }
+
+    .termosServ{
+        padding-left: 25px;
+    }
+
+    .itens{
+        font-weight: bold;
+        padding: 15px 0 8px 0;
+    }
+
+    .subItens{
+        padding: 0px 0px 15px 17px;
+    }
+
+    /*Criar Conta*/
+
+    .login{
+        height: 750px;
+        width: 90%;
+    }
+
+    .box{
+        top: 200px;
+        width: 75%;
+    }
+
+    legend{
+        padding-bottom: 25px;
+        width: 100%;
+        font-size: 13px;
+    }
+
+    fieldset{
+        width: 100%;
+    }
+
+    fieldset p{
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1260px)
+{
+    /*Cabeçalho*/
+
+    header{
+        display: inline-flex;
+        align-items: center;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .cabecalho{
+        margin: 0 2%;
+    }
+
+    .logo_texto{
+        font-size: 15px;
+    }
+
+    .logo_imagem{
+        width: 65px;
+    }
+
+    .logo_imagem img{
+        width: 100%;
+    }
+
+    /*Menu*/
+    
+    .menu{
+        margin: 0 2%;
+        background-color: black;
+    }
+    
+    .menu li a{
+        font-size: 14px;
+        padding: 5px 12px;
+    }
+
+    /*Rodapé*/
+
+    .rodape{
+        font-size: 12px;
+        line-height: 16px;
+        padding: 8px;
+        width: 90%;
+        margin: auto;    
+    }
+
+    .contato img{
+        width: 30px;
+    }
+
+    /*Corpo*/
+
+    .conteudo{
+        font-size: 13px;
+        width: 90%;
+        margin: auto;
+    }
+    
+    .boxAnime{
+        width: 32%;
+    }
+
+    /*Noticias*/
+    
+    .contNoticia{
+        width: 90%;
+        padding: 20px;
+    }
+
+    .corpo .contNoticia .destaqueCaixa{
+        background-color: rgb(0, 0, 0);
+        margin: 15px 0;
+        width: 100%;
+        display: flex;
+        text-align: justify;
+    }
+
+    .corpo .contNoticia .destaqueCaixa .destImagem img{
+        width: 49%;
+        
+    }
+
+    .corpo .contNoticia .destaqueCaixa .destImagem{
+        width: 35%;
+        display: flex;
+        align-items: center;
+    }
+
+    .corpo .contNoticia .destaqueCaixa .destTexto{
+        width: 65%;
+        padding: 15px;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .corpo .contNoticia .destaqueCaixa .destTexto p{
+        padding: 10px 0 10px 0;
+    }
+ 
+    .corpo .contNoticia .destaqueCaixa .destTexto a button{
+        background-color: red;
+        color: white;
+        padding: 10px;
+        letter-spacing: 1px;
+        width: 40%;
+        border: none;
+        font-size: 12px;
+    }
+
+    .corpo .contNoticia .destaqueCaixa .destTexto a button:hover{
+        background-color: rgb(252, 88, 88);
+        width: 42%;
+    }
+    
+    .corpo .contNoticia .noticia .textNot p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: justify;
+        line-height: 20px;
+        font-size: 13px;
+    }
+
+    .corpo .contNoticia .noticia{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .corpo .contNoticia .noticia .textNot{
+        width: 60%;
+        height: 50%;
+        padding: 15px;
+        border: #0F0F0F;
+    }
+
+
+    .corpo .contNoticia .noticia iframe{
+        width: 40%;
+        height: 225px;
+        padding-top: 25px;
+    }
+
+    .corpo .contNoticia .noticia img{
+        width: 60%;
+    }
+    
+    /*vendas*/
+    
+    .contVenda{
+        width: 90%;
+    }
+
+    .vendTipo{
+        padding: 50px 0px 50px 0px;
+    }
+
+    .vendTipo h2{
+        width: 90%;
+        margin: auto;
+    }
+
+    .vendTipo p{
+        font-size: 18px;
+        line-height: 25px;
+        width: 90%;
+    }
+
+    .descPeca{
+        width: 30%;
+    }
+
+    .descPeca img{
+        width: 100%;
+    }
+
+    .descPeca h3{
+        font-size: 17;
+        line-height: 23px;
+    }
+
+    .descPeca button{ 
+        width: 115px;
+    }
+
+    .descPeca button p{
+        line-height: 19px;
+    }
+
+
+    /* Termos de Uso*/
+
+    .corpoTerm{
+        width: 92%;
+        padding: 60px 0px 60px 0px;
+    }
+
+    .corpoTerm h3{
+        font-size: 38px;
+    }
+
+    .itens{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 20px 0 10px 0;
+    }
+
+    .subItens{
+        padding: 0px 0px 15px 40px;
+    }
+    
+    /*Criar Conta*/
+    
+    .login{
+        height: 750px;
+        width: 90%px;
+    }
+}
+
+@media (min-width: 1260px)
+{
+    /*Cabeçalho*/
+
+    header{
+        padding: 5px 0px;
+        align-items: center;
+        display: flex;
+    }
+    
+    .cabecalho{
+        margin: 10px 100px;
+        height: 50px;
+    }
+
+    .logo_imagem{
+        width: 85px;
+    }
+
+    .logo_imagem img{
+        width: 100px;
+    }
+
+    /*Menu*/
+    
+    .menu{
+        margin: 0 100px;
+    }
+
+    /*Rodapé*/
+
+    .rodape{
+        font-size: 14px;
+        line-height: 20px;
+        padding: 15px;
+        width: 1260px;
+        margin: auto;    
+    }
+
+    .contato img{
+        width: 45px;
+        padding: 10px 5px 10px 0px;
+    }
+
+    /*Corpo*/
+
+    .conteudo{
+        font-size: 14px;
+        width: 1250px;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    .boxAnime{
+        width: 25%;
+    }
+
+    /*Noticias*/
+    
+    .contNoticia{
+        width: 1250px;
+    }
+
+    .corpo .contNoticia .destaqueCaixa{
+        display: flex;
+        background-color: rgb(0, 0, 0);
+        width: 1140px;
+        height: 330px;
+        margin: auto;
+        padding-bottom: 15px;
+    }
+
+    .corpo .contNoticia .destaqueCaixa .destImagem{
+        display: flex;
+    }
+
+    .corpo .contNoticia .destaqueCaixa .destTexto{
+        padding: 30px;
+        text-align: justify;
+        line-height: 25px;
+    }
+
+    .corpo .contNoticia .destaqueCaixa .destTexto p{
+        padding: 15px 0 15px 0;
+    }
+ 
+    .corpo .contNoticia .destaqueCaixa .destTexto a button{
+        background-color: red;
+        color: white;
+        padding: 15px;
+        letter-spacing: 1px;
+        width: 200px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .corpo .contNoticia .destaqueCaixa .destTexto a button:hover{
+        background-color: rgb(252, 88, 88);
+    }
+
+    .corpo .contNoticia .noticia{
+        width: 1140px;
+        display: flex;
+        line-height: 25px;
+        margin: auto;
+        padding: 20px 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .corpo .contNoticia .noticia .textNot{
+        width: 60%;
+        height: 50%;
+        padding: 15px;
+        border: #0F0F0F;
+    }
+
+    .corpo .contNoticia .noticia iframe{
+        width: 40%;
+        height: 225px;
+        padding-top: 2%;
+    }
+    
+    /*vendas*/
+
+    .contVenda{
+        width: 1260px;
+    }
+
+    .vendTipo{
+        padding: 80px 0px 80px 0px;
+    }
+
+    .vendTipo p{
+        font-size: 20px;
+        line-height: 29px;
+        width: 650px;
+    }
+
+    .descPeca{
+        width: 300px;
+    }
+
+    .descPeca img{
+        width: 250px;
+    }
+
+    /* Termos de Uso*/
+
+    .corpoTerm h3{
+        font-size: 40px;
+    }
+
+    .corpo .corpoTerm{
+        width: 1230px;
+        padding: 70px 0px 70px 0px;
+    }
+
+    .itens{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 20px 0 10px 0;
+    }
+
+    .subItens{
+        padding: 0px 0px 15px 40px;
+    }
+
+    /*Criar Conta*/
+    
+    .login{
+        height: 800px;
+        width: 1260px;
+    }
+}
