@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+        <title>TopCars</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link 
+            rel="stylesheet" 
+            href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
+            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" 
+            crossorigin="anonymous"
+        >
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header class="mb-5">
+           <!--  Barra de Navegação  -->
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top border bg-light" id="navbar">
+                <div class="container">
+                    <div class="container d-flex justify-content-between align-items-center">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/logo-modal_topcars.png"/>
+                            <span class="h3 text-dark"><b>TopCars</b></span>
+                        </a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbar-items"
+                            aria-controls="navbar-items"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                            
+                        >
+                            <i class="bi bi-list navbar-toggler-icon black"></i>
+                        </button>
+                        
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-items">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-5">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">
+                                    <hr class="d-lg-none">
+                                    <p class="h5 px-1 pb-1 border-bottom">Home</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="galeria.html">
+                                    <p class="h5 px-1">Geleria</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tabela.html">
+                                    <p class="h5 px-1">Tabelas</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="videos.html">
+                                    <p class="h5 px-1">Vídeos</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">
+                                    <p class="h5 px-1">Login</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    
+        <main class="pt-5 mb-2">
+            <!--  Slider -->
+            <div class="container" id="slider-container">
+                <div id="slider" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button
+                            type="button"
+                            data-bs-target="#slider"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#slider"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#slider"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                        ></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/bmw_m4.jpg" class="d-block w-100" alt="Carro 1" />
+                            <div class="carousel-caption">
+                                <h5>BMW M4</h5>
+                                <a href="#" class="btn btn-dark">Ver Carro</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/nissan_gtr.png" class="d-block w-100" alt="Carro 2" />
+                            <div class="carousel-caption">
+                                <h5>Nissan GTR Nismo</h5>
+                                <a href="#" class="btn btn-dark">Ver Carro</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/mustang_shelby.png" class="d-block w-100" alt="Carro 3" />
+                            <div class="carousel-caption">
+                                <h5>Shelby GT500</h5>
+                                <a href="#" class="btn btn-dark">Ver Carro</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#slider"
+                        data-bs-slide="prev"
+                    >
+                        <i class="bi bi-chevron-compact-left"></i>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#slider"
+                        data-bs-slide="next"
+                    >
+                        <i class="bi bi-chevron-compact-right"></i>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <div class="col-12 col-md-10 offset-md-1 mt-4" id="mini-banners">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="card text-center">
+                                <img src="img/motor_template.png" alt="">
+                                <div class="card-body primary-color">
+                                    <h5 class="card-title primary-color">
+                                        Preparação de Motores
+                                    </h5>
+                                    <p class="card-text secondary-color">
+                                        Extraia o máximo de performace do seu motor.
+                                    </p>
+                                    <a href="#" class="btn btn-dark">Saber Mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card text-center">
+                                <img src="img/suspensao_template.png" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title primary-color">Suspenções Persanalizadas</h5>
+                                    <p class="card-text secondary-color">
+                                        Tenha uma boa estabilidade e obtenha resultados incriveis.
+                                    </p>
+                                    <a href="#" class="btn btn-dark">Saber Mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card text-center">
+                                <img src="img/roda_template.png" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title primary-color">Rodas Persanalizadas</h5>
+                                    <p class="card-text secondary-color">
+                                        Deixe o seu carro mais estiloso com vários modelos de rodas.
+                                    </p>
+                                    <a href="#" class="btn btn-dark">Saber Mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <!-- Destaques -->
+            <div class="container mt-5">
+                <div class="container d-flex">
+                    <h3 class="mt-5 border-danger border-top d-flex h1"><b>Carros de Destaque</b></h3>
+                </div>
+                <p class="mx-3 mt-1 h5">Carros mais buscados por amantes da velocidade</p>
+                <div class="row d-flex text-center px-2 mt-3">
+                    <div class="col-12 col-md-4 mt-4">
+                        <img src="img/destaque_maclaren.jpg" alt="MacLaren" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-4 mt-4">
+                        <img src="img/destaque_corvete_c8.jpg" alt="Lamborghini" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-4 mt-4">
+                        <img src="img/destaque_dodge.jpg" alt="Dodge SRT" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-4 mt-4">
+                        <img src="img/destaque_camaro.jpg" alt="Camaro" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-4 mt-4">
+                        <img src="img/destaque_nissa_gtr.jpg" alt="Nissan GTR Nismo" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-4 mt-4">
+                        <img src="img/destaque_lamborghini2.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Informações -->
+            <div class="container mt-5">
+                <div class="container d-flex">
+                    <h3 class="mt-5 border-danger border-top d-flex h1"><b>Detalhes sobre nós</b></h3>
+                </div>
+                <p class="mx-3 mt-1 h5" >Saiba um pouco mais sobre nossa história</p>
+                <div class="row mt-5 d-flex align-items-center">
+                    <div class="col-12 col-md-6">
+                        <img class="img-fluid" src="img/concessionaria.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-md-6 border bg-dark "  id="info">
+                        <h3 class="text-light mx-3 my-4">O que nos diferencia:</h3>
+                        <p class="text-light mx-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ullam sed recusandae molestiae 
+                            animi ab laboriosam, dolore labore accusantium voluptatum, cumque autem non nesciunt? Amet doloremque 
+                            quo nostrum facilis exercitationem.
+                        </p>
+                        <div class="row pb-3">
+                            <div class="col">
+                                <p class="h1 text-light ms-4 mt-4">21</p>
+                                <p class="text-light ms-4">Anos mercado de veiculos</p>
+                            </div>
+                            <div class="col">
+                                <p class="h1 text-light ms-4 mt-4">1509</p>
+                                <p class="text-light ms-4">Veiculos vendidos</p>
+                            </div>
+                            <div class="col">
+                                <p class="h1 text-light ms-4 mt-4">7</p>
+                                <p class="text-light ms-4">Lojas no Brasil</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-black text-light">
+            <!-- Rodapé -->
+            <div class="container py-3" id="rodPe">
+                <div class="row my-4 mx-2 mb-5">
+                    <!-- E-mail d Incrição -->
+                    <div class="col-12 col-md-4 border-right-5 mt-4 mb-3">
+                        <h4>Fique por dentro das novidades</h4>
+                        <p class="secondary-color">
+                          Inscreva-se para saber em primeira mão
+                        </p>
+                        <form>
+                          <div class="mb-3 w-75">
+                            <input
+                              type="email"
+                              class="form-control"
+                              placeholder="Digite o seu e-mail"
+                            />
+                          </div>
+                          <button class="btn btn-light">Inscrever</button>
+                        </form>
+                    </div>
+                    <!-- Opções de Contato -->
+                    <div class="col-12 col-md-4 align-items-center mt-5 mb-5 d-lg-none">
+                        <h4>Formas de contato</h4>
+                        <p class="text-secondary  pt-3">(38) 9999-9999</p>
+                        <p class="text-secondary">CarsTop@hotmail.com</p>
+                    </div>
+                    <div class="col-12 col-md-4 align-items-center mt-4 px-4 border border-top-0 border-bottom-0 d-none d-lg-block">
+                        <h4>Formas de contato</h4>
+                        <p class="text-secondary  pt-3">(38) 9999-9999</p>
+                        <p class="text-secondary">CarsTop@hotmail.com</p>
+                    </div>
+                    <!-- Redes Sociais-->
+                    <div class="col-12 col-md-4 d-flex align-items-center justify-content-center mt-4">
+                        <ul class="nav d-flex justify-content-center align-items-center">
+                            <li class="mx-3 my-2">
+                                <a href="https://www.facebook.com/carloseduardo.santos.94695459" target="_blank">
+                                    <i class="fab fa-facebook fa-3x"></i>
+                                </a>
+                            </li>
+                            <li class="mx-3 my-2">
+                                <a href="https://www.instagram.com/khadu.santos" target="_blank">
+                                    <i class="fab fa-instagram fa-3x"></i>
+                                </a>
+                            </li>
+                            <li class="mx-3 my-2">
+                                <a href="https://github.com/Kadu-Santos" target="_blank">
+                                    <i class="fab fa-github fa-3x"></i>
+                                </a>
+                            </li>
+                            <li class="mx-3 my-2">
+                                <a href="https://wa.me/+5538998789524" target="_blank">
+                                    <i class="fab fa-whatsapp fa-3x"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center border-top pt-3"> &copy 2023 Copyright TopCars</div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="js/bootstrap.min.js"></script>
+        </body>
+
+</html>

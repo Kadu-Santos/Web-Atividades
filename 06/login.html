@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+        <title>Notícias</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link 
+            rel="stylesheet" 
+            href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
+            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" 
+            crossorigin="anonymous"
+        >
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header class="mb-5">
+            <!--  Barra de Navegação  -->
+             <nav class="navbar navbar-expand-lg navbar-light fixed-top border bg-light" id="navbar">
+                 <div class="container">
+                     <div class="container d-flex justify-content-between align-items-center">
+                         <a class="navbar-brand" href="index.html">
+                             <img src="img/logo-modal_topcars.png"/>
+                             <span class="h3 text-dark"><b>TopCars</b></span>
+                         </a>
+                         <button
+                             class="navbar-toggler"
+                             type="button"
+                             data-bs-toggle="collapse"
+                             data-bs-target="#navbar-items"
+                             aria-controls="navbar-items"
+                             aria-expanded="false"
+                             aria-label="Toggle navigation"
+                             
+                         >
+                             <i class="bi bi-list navbar-toggler-icon"></i>
+                         </button>
+                         
+                     </div>
+                     <div class="collapse navbar-collapse" id="navbar-items">
+                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-5">
+                             <li class="nav-item">
+                                 <a class="nav-link" aria-current="page" href="index.html">
+                                     <hr class="d-lg-none">
+                                     <p class="h5 px-1">Home</p>
+                                 </a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="galeria.html">
+                                     <p class="h5 px-1">Geleria</p>
+                                 </a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="tabela.html">
+                                     <p class="h5 px-1">Tabelas</p>
+                                 </a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="videos.html">
+                                     <p class="h5 px-1">Vídeos</p>
+                                 </a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link active" href="login.html">
+                                     <p class="h5 px-1 border-bottom pb-1">Login</p>
+                                 </a>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+             </nav>
+         </header>
+
+         <main class="pt-5 mb-5">
+            <!--Formulario de Login -->
+            <div class="container mt-5 pt-5 pb-5">
+                <div class="row d-flex justify-content-center">
+                    <!-- Imagem -->
+                    <div class="col-md-9 col-lg-6 col-xl-5">
+                        <img src="img/imagem_login.jpg"
+                            class="img-fluid" alt="Sample image">
+                    </div>
+                    <!-- Formulario -->
+                    <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                        <form>
+                            <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                                <p class="lead fw-normal mb-0 me-3">Entrar com</p>
+    
+                                <button type="button" class="btn btn-primary btn-floating mx-1">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+    
+                                <button type="button" class="btn btn-primary btn-floating mx-1">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+    
+                                <button type="button" class="btn btn-primary btn-floating mx-1">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </button>
+                            </div>
+    
+                            <div class="divider d-flex align-items-center my-4">
+                                <p class="text-center fw-bold mx-3 mb-0">Ou</p>
+                            </div>
+    
+                            <!-- Email -->
+                            <div class="form-outline mb-4">
+                                <input type="email" id="email" class="form-control form-control-lg" placeholder="Email" />
+                                <label class="form-label mx-1 mt-1" for="email">Endereço de Email</label>
+                            </div>
+    
+                            <!-- Senha -->
+                            <div class="form-outline mb-3">
+                                <input type="password" id="senha" class="form-control form-control-lg"
+                                    placeholder="Digite sua senha" />
+                                <label class="form-label mx-1 mt-1" for="senha">Senha</label>
+                            </div>
+    
+                            <!-- Lembre de min-->
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="form-check mb-0">
+                                    <input class="form-check-input me-2" type="checkbox" value="" id="checkBox" />
+                                    <label class="form-check-label" for="checkBox">
+                                        Lembre de mim
+                                    </label>
+                                </div>
+                                <a href="#!" class="text-body">Esqueceu a senha?</a>
+                            </div>
+    
+                            <div class="text-center text-lg-start mt-4 pt-2">
+                                <button type="button" class="btn btn-primary btn-lg w-25">Entrar</button>
+                                <p class="small fw-bold mt-2 pt-1 mb-0">Não tem conta? <a href="#!"
+                                        class="link-danger" data-bs-toggle="modal" data-bs-target="#modalId">Register</a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+				<div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+					<div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<img src="img/logo-modal_topcars.png" alt="logo">
+								<h5 class="modal-title" id="modalTitleId">TopCars</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							
+                            <div class="container mb-5 mt-5">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-8 col-lg-7 col-xl-6">
+                                        <form>
+                                            <p class="lead fw-normal mb-0 me-3 text-center mb-3"> Crie sua conta para desfrutar de nosso conteudo!</p>
+                    
+                                            <!-- Email -->
+                                            <div class="form-outline mb-3">
+                                                <input type="email" id="email" class="form-control form-control-lg" placeholder="Email" />
+                                                <label class="form-label mx-1 mt-1" for="email">Endereço de Email</label>
+                                            </div>
+                    
+                                            <!-- Senha -->
+                                            <div class="form-outline mb-3">
+                                                <input type="password" id="senha" class="form-control form-control-lg"
+                                                    placeholder="Digite sua senha" />
+                                                <label class="form-label mx-1 mt-1" for="senha">Senha</label>
+                                            </div>
+
+                                            <!--Confirmar Senha -->
+                                            <div class="form-outline mb-3">
+                                                <input type="password" id="confirmSenha" class="form-control form-control-lg"
+                                                    placeholder="Confirme sua senha" />
+                                                <label class="form-label mx-1 mt-1" for="confirmSenha">Senha</label>
+                                            </div>
+
+                                            <!-- Termos e Serviços -->
+                                            <div class="d-flex align-items-center justify-content-start">
+                                                <div class="form-check mx-1">
+                                                    <input class="form-check-input me-2" type="checkbox" value="" id="checkBox" />
+                                                    <label class="form-check-label" for="checkBox">
+                                                        Concordo com Termos e Serviços
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="text-center mt-4 pt-2">
+                                                <button type="button" class="btn btn-primary btn-lg w-75 mb-1">Criar Conta</button>
+                                            </div>
+
+                                            <p class="lead fw-normal mb-0 text-center mb-3 mt-2">Entra com</p>
+
+                                            <div class="d-flex justify-content-center">
+                                                <button type="button" class="btn btn-primary btn-floating mx-1">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </button>
+                    
+                                                <button type="button" class="btn btn-primary btn-floating mx-1">
+                                                    <i class="fab fa-twitter"></i>
+                                                </button>
+                    
+                                                <button type="button" class="btn btn-primary btn-floating mx-1">
+                                                    <i class="fab fa-linkedin-in"></i>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+							<div class="modal-footer d-flex justify-content-between">
+								<div class="contato">
+									<a href="https://www.facebook.com/carloseduardo.santos.94695459" target="_blank">
+									<img src="img/facebook.png" alt="contatoFacebook"></a>
+				
+									<a href="https://www.instagram.com/khadu.santos" target="_blank">
+									<img src="img/instagram.png" alt="contatoInstagran"></a>
+				
+									<a href="https://wa.me/+5538998789524" target="_blank">
+									<img src="img/whatsapp.png" alt="contatoWatsApp"></a>
+								</div>
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+    
+        </main>
+
+        <footer class="bg-black text-light">
+            <!-- Rodapé -->
+            <div class="container py-3" id="rodPe">
+                <div class="row my-4 mx-2 mb-5">
+                    <!-- E-mail d Incrição -->
+                    <div class="col-12 col-md-4 border-right-5 mt-4 mb-3">
+                        <h4>Fique por dentro das novidades</h4>
+                        <p class="secondary-color">
+                          Inscreva-se para saber em primeira mão
+                        </p>
+                        <form>
+                          <div class="mb-3 w-75">
+                            <input
+                              type="email"
+                              class="form-control"
+                              placeholder="Digite o seu e-mail"
+                            />
+                          </div>
+                          <button class="btn btn-light">Inscrever</button>
+                        </form>
+                    </div>
+                    <!-- Opções de Contato -->
+                    <div class="col-12 col-md-4 align-items-center mt-5 mb-5 d-lg-none">
+                        <h4>Formas de contato</h4>
+                        <p class="text-secondary  pt-3">(38) 9999-9999</p>
+                        <p class="text-secondary">CarsTop@hotmail.com</p>
+                    </div>
+                    <div class="col-12 col-md-4 align-items-center mt-4 px-4 border border-top-0 border-bottom-0 d-none d-lg-block">
+                        <h4>Formas de contato</h4>
+                        <p class="text-secondary  pt-3">(38) 9999-9999</p>
+                        <p class="text-secondary">CarsTop@hotmail.com</p>
+                    </div>
+                    <!-- Redes Sociais-->
+                    <div class="col-12 col-md-4 d-flex align-items-center justify-content-center mt-4">
+                        <ul class="nav d-flex justify-content-center align-items-center">
+                            <li class="mx-3 my-2">
+                                <a href="https://www.facebook.com/carloseduardo.santos.94695459" target="_blank">
+                                    <i class="fab fa-facebook fa-3x"></i>
+                                </a>
+                            </li>
+                            <li class="mx-3 my-2">
+                                <a href="https://www.instagram.com/khadu.santos" target="_blank">
+                                    <i class="fab fa-instagram fa-3x"></i>
+                                </a>
+                            </li>
+                            <li class="mx-3 my-2">
+                                <a href="https://github.com/Kadu-Santos" target="_blank">
+                                    <i class="fab fa-github fa-3x"></i>
+                                </a>
+                            </li>
+                            <li class="mx-3 my-2">
+                                <a href="https://wa.me/+5538998789524" target="_blank">
+                                    <i class="fab fa-whatsapp fa-3x"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center border-top pt-3"> &copy 2023 Copyright TopCars</div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="js/bootstrap.min.js"></script>
+        </body>
+
+</html>
